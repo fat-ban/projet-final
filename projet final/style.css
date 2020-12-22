@@ -1,0 +1,1346 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+* {
+    box-sizing: border-box; 
+    
+}
+/****headerNav*****/
+/*.header{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}*/
+.navbar{
+    display: flex;
+    /*position: relative;*/
+  /* overflow: hidden;*/
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+   /***/
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+    background-color: #121b2f;
+    color: white;
+    z-index: 1;
+    
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+    /****/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+}
+.navbar-links{
+    height: 100%;
+    /*padding-right: 60px;*/
+    
+}
+.navbar-links ul{
+    display: flex;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar-links ul li{
+    list-style: none;
+}
+.navbar-links ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin-right: 2rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+.navbar-links ul li:hover{
+    background-color: #555;
+    
+   transition: .5s;
+    /*border: 2px solid #f5a425;*/
+}
+.navbar-links ul li:hover a{
+    color: #ffc107;
+}
+
+.brand-title .title-one{
+    color: #ffc107;
+}
+.brand-title .title-seconde{
+    padding-left: 10px;
+    color: white;
+}
+.brand-title h1{
+    font-size:35px ;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: .3em;
+}
+
+
+.toggle-button{
+    position: absolute;
+    /*top: .75em;*/
+    top: 25px;
+    right: 1em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
+.toggle-button .bar:hover{
+    background-color: #f5a425;
+}
+/*.menuAbout{
+    position: relative;
+}*/
+/*.mainMenu .submenu{
+    display: none;
+    list-style: none;
+}
+.mainMenu .submenu li a{
+    text-decoration: none;
+}*/
+/*.mainMenu > li{
+    margin-left: 30px;
+    padding: 12px 15px;
+   box-sizing: border-box;
+   z-index: 1;
+}*/
+
+.mainMenu  li:hover  {
+    /*transform: scaleY(1.0);*/
+   /* transition: all 0.2ms;
+    border: 2px solid #f5a425;
+    /*z-index: 1;*/
+    
+   
+}
+
+/*.menuAbout:hover .submenu{
+display: flex;  
+position: absolute;
+top: 120%;
+left: 0;
+
+/*justify-content: center;*/
+/*flex-flow: column nowrap*/
+/*flex-direction: column;
+align-items: center;
+
+/*align-items: center;*/
+/*width: 160px;
+background-color:#121b2f;
+padding-left: 0;
+
+}
+
+.menuAbout .submenu li {
+display: block;
+padding: 20px 10px;
+/*letter-spacing: 0.5px;*/
+/*border-bottom: 1px solid rgba(22,34,57,0.95) ;
+}
+.menuAbout .submenu li a{
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 15px;
+    letter-spacing: 0.5px;    
+    border: none;
+     transition: all 0.5s;
+}
+.submenu li a:hover{
+    color: #f5a425;
+    transition: all 0.5s;
+}*/
+
+/**********section sTYLE Graduate School********************************/
+.gradSchool{
+  /* */
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color:#121b2f  ;
+}
+.gradSchool .videoDiv{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+ .videoDiv video{
+min-width: 100%;
+/*min-height: 85vh;*/
+max-width: 100%;
+/*max-height: 85vh;*/
+height: 100vh;
+opacity: 0.2;
+object-fit: cover;
+z-index: -1;
+
+}
+ .hDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    /*transform: translate(-10%,-30%);*/
+   /* width: 80%;*/
+    
+    
+}
+.hDiv h6{
+    font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: white;
+   letter-spacing: 1px;
+   margin: 0;
+   padding-top: 30px;
+  
+}
+.hDiv h2{
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    padding-top: 30px;
+    margin: 0;
+    
+    
+}
+.hDiv h2 .emTitle{
+    color: #f5a425;
+    font-style: normal;
+}
+.hDiv .linkDescover{
+ text-decoration: none;
+ color: white;
+ padding: 20px 20px;
+ background-color: #f5a425;
+ text-transform: uppercase;
+ font-size: 14px;
+ font-weight: 800;
+ text-align: center;
+ display: inline-block;
+ margin-top: 25px;
+ /*cursor: pointer;*/
+}
+.hDiv .linkDescover:hover{
+    text-decoration: none;
+   
+    background-color: #96794b;
+   
+    cursor: pointer;
+   }
+.threeDiv{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+   position: absolute;
+   
+    bottom: -3px;
+   
+   
+    left: 25%;
+    right: 25%;
+ }
+ .threeDiv .div1 , .div2 {
+    margin-right: 20px;
+ }
+.threeDiv .div1 , .div2 ,.div3{
+   flex: 1 50%;
+   /* width: 30%;*/
+    background-color: #121b2f;
+    color:#fff;
+   padding: 10px 20px;
+   max-width: 350px;
+   min-width: 350px;
+   height: 100px;
+    box-sizing: border-box;
+    /**/
+  
+   
+    }
+    
+    .threeDiv div h3{
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-align: start;
+        margin-bottom: 20px;
+       /* width: 150px;
+        height: 40px;*/
+       padding-left: 8px;
+    }
+    .threeDiv .div1 .parag{
+        display:none ;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: start;
+    }
+    
+    .threeDiv .div1:hover{
+       /*.divFloatHover{*/
+         flex: 1 50%;
+         background-color: #f5a425;
+         color:#fff;
+         width: 350px;
+         height: 250px;
+         box-sizing: border-box;
+         /*transition: all 0.5s;*/
+         cursor: pointer;
+         /***/
+       
+          transition: .5s ease;
+         
+         /*bottom: 0;*/
+        
+    }
+    .threeDiv .div1:hover .parag{
+   /* .divFloatHover .parag{    */
+        display:block ;
+        
+    }
+    .threeDiv .div2 .parag{
+        display:none ;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: start;
+    }
+    
+    .threeDiv .div2:hover{
+        flex: 1 50%;
+        background-color: #f5a425;
+        color:#fff;
+        width: 350px;
+        height: 250px;
+        box-sizing: border-box;
+        transition: all 0.5s;
+         cursor: pointer;
+         
+    }
+    .threeDiv .div2:hover .parag{
+        display:block ;
+       
+    }
+    .threeDiv .div3 .parag{
+        display:none ;
+        font-size: 12px;
+        line-height: 20px;
+        
+    }
+    
+    .threeDiv .div3:hover{
+        flex: 1 50%;
+         background-color: #f5a425;
+         color:#fff;
+         width: 350px;
+         height: 250px;
+         box-sizing: border-box;
+         transition: all 0.5s;
+         cursor: pointer;
+         
+    }
+    .threeDiv .div3:hover .parag{
+        display:block ;
+        
+    }
+   
+    .threeDiv div a{
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+/*******************section 1 style Why choose Grad School**************/
+.chooseSection {
+    background-image: url(./images/choosing-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    /*padding-left: 50px;
+    padding-right: 100px;*/
+   padding: 10px 100px 50px 100px;
+}
+.chooseSection .titleDiv{
+    background-color: rgba(22,34,57,0.95);
+   /* opacity: 0.3;*/
+    border: 2px solid rgba(196, 209, 233, 0.3);
+  
+    margin-top: 100px;
+    box-sizing: border-box;
+    align-self: center;
+}
+.chooseSection h3{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    
+    
+    
+}
+.chooseDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    list-style-type: none;
+}
+.chooseDiv .bestDiv{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-content: center;
+    
+}
+.chooseDiv li div{
+    /*margin-right: 10px;*/
+   /*display: block;*/
+   align-self: center;
+   /*text-decoration: none;*/
+   color: white;
+   font-size: 1em;
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-align: center;
+   padding: 5px 100px 10px 50px;
+   text-transform: uppercase;
+   position: relative;
+
+}
+
+
+.chooseDiv li div::after{
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+    /*border: 2px solid transparent;*/
+    background-color:white;
+    content: '';
+    position: absolute;
+    left: 45%;
+    transform: translate(-50%);
+    bottom: -50px;
+}
+.chooseDiv li:hover div{
+    color:#f5a425 ;
+    cursor: pointer;
+}
+.chooseDiv li:hover div::after{
+    padding: 3px;
+    
+    border: 3px solid rgba(22,34,57,0.95);
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+    background-color:#f5a425;
+    content: '';
+    position: absolute;
+    left: 45%;
+    /*transform: translate(-50%);*/
+    bottom: -50px;
+    
+   
+}
+/**best education**/
+.bestEducation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.bestEducation  .img{
+    align-self: center;
+    width: 50%;
+   
+    margin-right: 30px;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+
+/*.qualityMeeting .img{
+    align-self: center;
+    width: 50%;
+   
+    margin-right: 30px;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}*/
+/*.topManagement .img{
+    align-self: center;
+    width: 50%;
+   
+    margin-right: 30px;
+   
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}*/
+.bestEducation  .img img{
+   width:95% ;
+   
+    padding: 25px 10px 20px 15px;
+ 
+}
+
+.bestEducation .parag{
+    width: 50%;
+    color: white;
+    padding: 20px 0 20px 20px;
+
+}
+
+.bestEducation  .parag p{
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color:#fff;
+    
+  
+}
+.bestEducation .parag p a{
+    text-decoration: none;
+    color:#3CF ;
+}
+/**divChoose class***/
+#divChoose {
+    display: none;
+    flex-direction: row;
+    margin-top: 60px;
+    padding-left: 30px;
+   
+    width: 100%;
+}
+#divChoose .img{
+    align-self: center;
+    width: 50%;
+   
+    margin-right: 30px;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+#divChoose .img img{
+    width:95% ;
+    
+     padding: 25px 10px 20px 15px;
+  
+ }
+#divChoose .parag{
+    width: 50%;
+    color: white;
+    padding: 20px 0 20px 20px;
+}
+.bestEducation .parag h2{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+#divChoose .parag h2{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+#divChoose  .parag p{
+    color:#fff;
+    font-size: 15px;
+    line-height: 28px;
+}
+#divChoose  .parag p a{
+    text-decoration: none;
+    color:#3CF ;
+}
+/***top management***/
+.topManagement{
+    display: none;
+}
+
+/**************start SECTION 2 style any online course***********************/
+.sectionContact{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/coming-soon-bg.jpg);
+    /*background-position: center;*/
+    padding: 10px 100px 50px 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sectionContact .divLeft{
+    width: 70%;
+    padding: 100px 50px 100px 25px;
+    /*padding-top: 150px;*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.sectionContact .divLeft .divTitle h3{
+    font-size: 30px;
+    font-weight: 800;
+}
+.sectionContact .divLeft .divTitle h3 em{
+    font-style: normal;
+    color:#f5a425;
+}
+.sectionContact .divLeft .divDate{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.sectionContact .divLeft .divDate div{
+    width: 23%;
+    height: 150px;
+    background-color: rgba(196, 209, 233, 0.1);
+    margin-right: 10px;
+    text-align: center;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;*/
+   /* padding: 5px;*/
+   
+   
+}
+.sectionContact .divLeft .divDate div p {
+    font-size: 35px;
+    font-weight: 800;
+    
+    margin: 25px auto 25px auto;
+    
+    
+
+}
+.days{
+    display: inline;
+    align-items: center;
+    padding: 0;
+    font-size: 35px;
+    font-weight: 800;
+    background-color:  rgba(196, 209, 233, 0.1);
+    margin: 25px auto 25px auto;
+}
+.sectionContact .divLeft .divDate div  h3{
+   font-style: normal;
+   color: #f5a425;
+   font-size: 20px;
+   font-weight: 400;
+   text-transform: uppercase;
+   padding-bottom: 10px;
+}
+.sectionContact .divRight{
+    width: 45%;
+    margin-top: 30px;
+    padding: 30px;
+}
+.sectionContact .divRight  p{
+    width: auto;
+    height: 100px;
+    
+    background-color: rgba(196, 209, 233, 0.2);
+    padding: 30px 25px 25px 25px;
+    color: rgba(196, 209, 233, 0.9);
+    text-align: center;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.sectionContact .divRight form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(196, 209, 233, 0.1);
+    padding: 40px 30px 80px 30px;
+    margin-top: 0;
+}
+.sectionContact .divRight form input{
+    background-color:rgba(196, 209, 233, 0.2);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-style: none;
+    color: rgba(196, 209, 233, 0.7);
+    font-size: 15px;
+    /*opacity: 0.1px;*/
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+}
+.sectionContact .divRight form a{
+    display: inline-block;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    background-color: #f5a425;
+    margin-top: 30px;
+    padding: 15px /*20px 15px 20px*/;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+/********************start section 3 style Choose Your Course****/
+.sectionCours {
+    background-image: url(./images/choosing-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+   padding: 10px 100px 50px 100px;
+}
+.sectionCours .titleDiv-sect3 {
+    background-color: rgba(22,34,57,0.95);
+   
+     border: 2px solid rgba(196, 209, 233, 0.3);
+   
+     margin-top: 100px;
+     box-sizing: border-box;
+     align-self: center;
+}
+.sectionCours .titleDiv-sect3 h3{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    
+}   
+/******slid1 slid 2 slid3*****/
+.sectionCours .slider .slid1 ,.slid2 , .slid3{
+    display: grid;
+    justify-content: center;
+  /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+  grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 30px;
+    margin: 70px 40px 50px 40px;
+
+    
+}
+/**********************************/
+/*.sectionCours .slider .slid2 , .slid3 {
+    display: none;
+}*/
+.sectionCours .slider .slid1 .div1-slid1 , .div2-slid1 , .div3-slid1 , .div4-slid1 , .div5-slid1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 7px;
+}
+.slider .slid1 .div1-slid1> img{
+   border-radius: 5px;
+   margin-top: 7px;
+   
+
+}
+.slider .slid1  .div2-slid1 > img{
+    border-radius: 5px;
+    margin-top: 7px;
+ 
+ }
+ .slider .slid1  .div3-slid1 >img{
+    border-radius: 5px;
+    margin-top: 7px;
+ 
+ }
+/*.sectionCours .slider .slid2 .div1-slid2 , .div2-slid2 , .div3-slid2 , .div4-slid2 , .div5-slid2{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 7px;
+}
+.sectionCours .slider .slid3 .div1-slid3 , .div2-slid3 , .div3-slid3 , .div4-slid3 , .div5-slid3{
+    overflow: hidden;
+    background-color: white;
+    border-radius: 7px;
+}*/
+
+.div-slid-parag{
+    /*background-color: white;
+    margin-top: 0;*/
+    padding: 15px;
+}
+.div-slid-parag h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e1e1e;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.div-slid-parag p{
+    font-size: 14px;
+    color: #1e1e1e ;
+    line-height: 22px;
+}
+.div-slid-parag img{
+    background-size: 25px;
+    border:2px solid #f5a425 ;
+    border-radius: 25px;
+}
+.div-slid-parag a{
+    margin-left: 90px;
+    text-decoration: none;
+    color: #f5a425;
+}
+/*.icon-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.icon-slider a{
+    font-size: 10px;
+    display: inline-block;
+    color: transparent;
+    padding: 1px 3px;
+    background-color: white;
+    margin-right: 15px;
+}*/
+/********js********/
+/*.icon-slider .link-slid2:active{
+    background-color: #f5a425;
+}
+.icon-slider .link-slid3:active{
+    background-color: #f5a425;
+}
+.icon-slider .link-slid2:active .slid2{
+   display: flex;
+
+}
+.icon-slider .link-slid3:active .slid3 {
+    display: flex;
+}*/
+/*************************/
+/****************start style section 4Watch the video to learn*************/
+.section4 .div-section4{
+    background-image: url(./images/video-bg.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px 100px 50px 100px;
+    width: 100%;
+}
+.section4-leftside{
+    width: 100%;
+    padding-top: 60px;
+    padding-right: 50px;
+}
+.section4-leftside h4{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+.section4-leftside h1{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+.section4-leftside h1>span{
+    font-style: normal;
+    color:#f5a425;
+}
+.section4-leftside .header{
+    margin-top: 0;
+}
+.section4-leftside .header .first-h1{
+    margin: 20px 0 3px 0;
+}
+.section4-leftside .header h1{
+    font-size: 35px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    margin: 0;
+}
+.section4-leftside p{
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+.section4-leftside p>a{
+    text-decoration: none;
+    color: #3CF;
+}
+.section4 .div-section4 .section4-leftside .link-section4{
+    display: inline-block;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    background-color: #f5a425;
+    margin-top: 30px;
+    padding: 15px /*20px 15px 20px*/;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+.section4-rightside{
+ /*position: absolute;*/
+ width: 100%;
+ /*align-self: center;*/
+    
+   
+}
+.section4-rightside img{
+   /* position: absolute;
+    bottom: 20;
+    right: 0;*/
+    width: 100%;
+   /* height: 250px;*/
+}
+/******section 5*****/
+.section5{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/contact-bg.jpg);
+    /*background-position: center;*/
+    padding: 10px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section5 .titleDiv-sect5 {
+    background-color: rgba(22,34,57,0.95);
+   
+     border: 2px solid rgba(196, 209, 233, 0.3);
+   
+     margin-top: 100px;
+     box-sizing: border-box;
+     align-self: center;
+}
+.section5 .titleDiv-sect5 h3{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    
+}   
+.section5 .side-sect5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.section5 .side-sect5 .section5-leftside{
+    flex: 1;
+    width :600px;
+     height:450px;
+     margin-right: 15px;
+}
+.section5 .side-sect5 .section5-leftside form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(196, 209, 233, 0.1);
+    padding: 40px 30px 20px 30px;
+    margin-top: 0;
+}
+.section5 .side-sect5 .section5-leftside form input {
+    background-color:rgba(196, 209, 233, 0.2);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-style: none;
+    color: rgba(196, 209, 233, 0.7);
+    font-size: 15px;
+    /*opacity: 0.1px;*/
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+}
+.section5 .side-sect5 .section5-leftside form textarea{
+    background-color:rgba(196, 209, 233, 0.2);
+   /* padding: 15px;*/
+    margin-bottom: 10px;
+    border-style: none;
+    color: rgba(196, 209, 233, 0.7);
+    font-size: 15px;
+    /*opacity: 0.1px;*/
+    letter-spacing: 0.7px;
+    border-radius: 5px; 
+}
+.section5 .side-sect5 .section5-leftside form a{
+    display: inline-block;
+    align-self: flex-start;
+    /*justify-self: flex-start;*/
+    text-decoration: none;
+    color: white;
+    background-color: #f5a425;
+    margin-top: 30px;
+    padding: 15px /*20px 15px 20px*/;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+.section5 .side-sect5 .section5-leftside form a:hover{
+    background-color: #555;
+}
+.section5 .map-rightSide{
+    flex: 1;
+    width :600px;
+    height:450px;
+    margin-left: 15px;
+}
+.section5 .map-rightSide iframe{
+    width: 100%;
+}
+/*******footer********/
+.footer{
+    background-color: rgba(22,34,57,0.95) ;
+    border-top: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+.footer h5{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 25px 0;
+
+}
+.footer h5 a{
+    text-decoration: none;
+    color: #f5a425;
+    font-size: 13px;
+    font-weight: 700;
+}
+/*******responsive***************/
+@media screen and (max-width: 800px) {
+    
+    
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 1;
+    }
+    .toggle-button{
+        display: flex;
+       
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        padding: 0;
+        background: none;
+        
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(22,34,57,0.95);
+        
+       /* justify-content: center;
+        align-items: center;*/
+        
+    }
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links ul li a{
+       /*padding: .5rem 1rem;*/
+       padding: 19px;
+        /*text-align: center;*/
+    }
+    /*.navbar-links ul li a:hover{
+       border-style: none;
+       
+    }*/
+    .navbar-links.active{
+        display: flex;
+    }
+    /****section Graduate School***/
+    .hDiv h6{
+        font-size: 13px;
+       padding-top: 15px;
+      
+    }
+    .hDiv h2{
+        font-size: 30px;
+        padding-top: 15px;
+        
+    }
+    .hDiv .linkDescover{
+       
+        padding: 13px 13px;
+        
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 20px;
+        
+       }
+       .threeDiv{
+       
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+       
+     }  
+     .threeDiv .div1 , .div2 {
+        margin-right: 0;
+     }
+     .threeDiv .div1 , .div2 ,.div3{
+        flex: 1 100%;
+        /* width: 30%;*/
+         background-color: #121b2f;
+         color:#fff;
+         width: 100%;
+         height: 150px;
+       
+         }
+         .threeDiv .div1:hover{
+            /*.divFloatHover{*/
+            
+              max-width: 540px;
+              min-width: 540px;
+            
+             
+         }    
+         .threeDiv .div2:hover{
+            /*.divFloatHover{*/
+            
+              max-width: 540px;
+              min-width: 540px;  
+         }    
+         .threeDiv .div3:hover{
+            /*.divFloatHover{*/
+            
+              max-width: 540px;
+              min-width: 540px;
+            
+             
+         }    
+
+         /****section 1  Why choose Grad School***/
+         .chooseDiv li div{
+        
+           font-weight: 600;
+           
+           padding: 5px 50px 10px 50px;
+         }
+         .bestEducation {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            padding-left: 20px;
+            width: auto;
+        }
+        
+        
+        .bestEducation .img{
+            
+            width: 100%;
+           
+            margin-right: 30px;
+            
+           
+        }
+        .bestEducation .img img{
+            width:100% ;
+            
+             padding: 30px 10px 20px 15px;
+          
+         }
+        .bestEducation .parag{
+            text-align: center;
+            width: 100%;
+            color: white;
+            padding: 20px 0 20px 20px;
+        
+        }
+        /****/
+        #divChoose{
+           /* display: flex;*/
+            flex-direction: column;
+            margin-top: 40px;
+            padding-left: 20px;
+            width: auto;
+        }
+        #divChoose .img {
+            width: 100%;
+           
+            margin-right: 30px;
+        }
+        #divChoose  .img img{
+            width:100% ;
+            
+             padding: 30px 10px 20px 15px;
+          
+         }
+        #divChoose  .parag{
+            text-align: center;
+            width: 100%;
+            color: white;
+            padding: 20px 0 20px 20px;
+        
+        }
+        /**section2 any online course**/
+        .sectionContact{
+            background-size: cover;
+            /*background-position: center;*/
+            padding: 10px 100px 50px 100px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .sectionContact .divLeft{
+            width: 100%;
+            padding: 50px 50px 50px 25px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionContact .divLeft .divDate{
+            width: 100%;
+        }
+        .sectionContact .divLeft .divDate div{
+            width: 150px;
+           
+            text-align: center;
+            align-items: center;
+            
+        }
+        .sectionContact .divLeft .divDate div  h3{
+            
+            font-size: 15px;
+            
+         }
+         .sectionContact .divRight{
+            width: 100%;
+            
+        } 
+        /***section 3  Choose Your Course***/
+        .sectionCours {
+            background-size: cover;
+            padding: 10px 30px 50px 30px;
+        }
+        .sectionCours .slider .slid1 {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 33% 33% 33%;
+            grid-column-gap: 30px;
+            margin: 70px 40px 50px 40px;
+        }
+        .div4-slid1 , .div5-slid1{
+            display: none;
+
+            
+        }
+        .div-slid-parag >p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        /*****section 4Watch the video to learn****/
+        .section4 .div-section4{
+            background-size: cover;
+            
+            flex-direction: column;
+            
+            
+        }
+        .section4-leftside{
+            /* width: 60%;*/
+            
+             padding-right: 0;
+             padding-bottom: 30px;
+         }
+         .section4-rightside{
+
+         }
+         .section4-rightside img{
+
+         }
+         /***section5***/
+         
+     /*******section 5*****/
+     .section5{
+        
+        background-size: cover;
+        /*background-position: center;*/
+        
+    }
+     .section5 .side-sect5 {
+       
+        flex-direction: column;
+       
+    
+    }
+    .section5 .side-sect5 .section5-leftside{
+        flex: 1;
+        width :100%;
+         height:450px;
+         margin-bottom: 30px;
+    }
+    .section5 .map-rightSide{
+        /*flex: 1;
+        width :450px;
+        height:450px;
+        margin-left: 0;*/
+        width: 100%;
+    }
+    /****footer*****/
+    .footer h5{
+        font-size: 12px;
+        font-weight: 700;
+        
+    }
+  }
+
+
+
+
+
